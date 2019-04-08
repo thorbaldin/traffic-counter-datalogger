@@ -121,7 +121,7 @@ void loop(void)
   DateTime now;
 
   // delay for the amount of time we want between readings
-  delay((LOG_INTERVAL -1) - (millis() % LOG_INTERVAL));
+  // delay((LOG_INTERVAL -1) - (millis() % LOG_INTERVAL));
   
   digitalWrite(greenLEDpin, HIGH);
   
@@ -191,7 +191,7 @@ void loop(void)
       averageValue =sensorValue+10;
 
       digitalWrite(ledPin,HIGH);
-      delay(500);
+      delay(800);
     }
     else 
     {
